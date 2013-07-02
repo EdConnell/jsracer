@@ -1,9 +1,36 @@
-.container {
-  margin: 20px auto;
+
+.container{
   width: 600px;
-  padding: 0px 20px 20px 20px;
-  border: 1px dotted black;
+  margin: 0 auto;
 }
-th {
-  text-align: left;
+  
+body {
+  margin-top:15%;
+  margin-left: 5%;
+}
+
+.racer_table{
+  margin: 0 auto;
+}
+
+.racer_table td {
+  height: 20px;
+  width: 20px;
+}
+
+.racer_table tr:last-child{
+  border-bottom: 2px solid #CCC;
+}
+
+.racer_table td:last-child{
+  border-right: 2px solid #CCC;
+}
+
+.racer_table td.active {
+  background-color: black;
+}
+
+
+#legend td {
+  padding: 5px;
 }

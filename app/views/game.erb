@@ -1,0 +1,64 @@
+    <table class="racer_table">
+
+      <tr id="player_one_strip">
+        <td class="active"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td> 
+        <td></td>  
+      </tr>
+      <tr id="player_two_strip">
+        <td class="active"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td> 
+        <td></td>  
+      </tr>
+    </table>
+
+
+<div id="legend">
+    <h4>To Go:</h4>
+    <table> 
+      <tr>
+          <td>→</td><td><%= @player_one.name %></td>
+      </tr> 
+        <tr>
+          <td>←</td><td><%= @player_two.name %></td>
+      </tr>  
+      <table>
+       <button id='reset' type='reset' value='Reset'>Reset</button>
+   </div>
+<script>
+  var player1 = new Player("<%= @player_one.name %>", "<%= @player_one.id %>");
+  var player2 = new Player("<%= @player_two.name %>", "<%= @player_two.id %>");
+
+  var game = new Game(player1, player2, <%= @game.id %>);</script>
